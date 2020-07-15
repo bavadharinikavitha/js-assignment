@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>VAR!</h2>
+
+<p>var is function scoped and var variables can be updated and redeclared</p>
+
+<p id="demo"></p>
+
+<script>
+var carName = "Volvo";
+myFunction();
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I can display " + carName;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LET!</h2>
+
+<p>let is a block scoped and let variables can be updated but not redeclared</p>
+
+<p id="demo"></p>
+
+<script>
+let carName = "Volvo";
+
+// code here can use window.carName
+document.getElementById("demo").innerHTML = "I can not display " + window.carName;
+</script>
+
+</body>
+</html>
+
+<script type="text/javascript"> 
+	const x = 22; 
+	{ 
+		const x = 90; 
+		console.log(x); 
+
+		{ 
+			const x = 77; 
+			console.log(x); 
+		} 
+		{ 
+			const x = 45; 
+			console.log(x); 
+		} 
+	} 
+	console.log(x); 
+</script> 
+<body>
+   <h1>CONST!</h1> 
+   <p> const is a block scoped and const variables neither be updated nor redeclared</p>
+</body>
