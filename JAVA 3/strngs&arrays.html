@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript String and array Methods</h1>
+<h2> JavaScript string method</h2>
+<p> 1)lastIndex method </p>
+<p id="demo"></p>
+<script>
+var str = "Please locate where 'salem' occurs!";
+   var pos = str.lastIndexOf("salem");
+document.getElementById("demo").innerHTML = pos;
+</script>
+<p>2)the length property</p>
+<p id="first"></p>
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("first").innerHTML = txt.length
+</script>
+<p>3)search()method </p>
+<p id="sec"></p>
+<script>
+  var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate"); 
+document.getElementById("sec").innerHTML = pos;
+    </script>
+<h2> Javascript array method</h2>
+<p>1)general array method</p>
+<p id="third"></p>
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("third").innerHTML = cars;
+</script>
+<p>2)comma String</p>
+<p id="fourth"></p>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("fourth").innerHTML = fruits.toString();
+</script>
+<p>3)slice method</p>
+<p id="five"></p>
+<script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+document.getElementById("five").innerHTML = fruits + "<br><br>" + citrus;
+</script>
+<h3>these are the some examples of strings and arrays which i know .thank you</h3>
